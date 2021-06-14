@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "parcel-build": "parcel build index.html && cp _redirects ./dist/",
-    "serve": "parcel index.html"
+    "serve": "parcel index.html",
+    "server:watch": "nodemon --watch ./server -e js ./server/index.js"
   },
   "keywords": [],
   "author": "",
@@ -24,7 +25,12 @@
     "stylelint-vscode": "^7.0.0-6"
   },
   "dependencies": {
+    "axios": "^0.21.1",
+    "dotenv": "^5.0.1",
+    "express": "^4.17.1",
     "lodash": "^4.17.21",
-    "navigo": "^7.1.3"
+    "mongoose": "^5.12.13",
+    "navigo": "^7.1.3",
+    "nodemon": "^2.0.7"
   }
 }
